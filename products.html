@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk Lokal - RT 41 Kilo 21</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="image/543628436_17844949881568486_3685383190443758722_n-removebg-preview.png">
+    <style>
+        .product-card { transition: all .3s ease; border: 1px solid rgba(0,0,0,.1); }
+        .product-card:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(0,0,0,.1) !important; border-color:#198754; }
+        .card-img-top { overflow: hidden; }
+        .card-img-top img { transition: transform .3s ease; }
+        .product-card:hover .card-img-top img { transform: scale(1.05); }
+        .btn-outline-success.active { background-color:#198754; color:#fff; }
+        .badge { font-size:.8rem; }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html"><img src="image/543628436_17844949881568486_3685383190443758722_n-removebg-preview.png" alt="Logo RT 41" height="38" class="me-2 align-text-top" style="vertical-align:middle;max-height:38px;">RT 41 Kilo 21</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home me-1"></i>Beranda</a></li>
+                <li class="nav-item"><a class="nav-link" href="profile.html"><i class="fas fa-users me-1"></i>Profil RT</a></li>
+                <li class="nav-item"><a class="nav-link" href="resources.html"><i class="fas fa-leaf me-1"></i>Potensi</a></li>
+                <li class="nav-item"><a class="nav-link active" href="products.html"><i class="fas fa-shopping-bag me-1"></i>Produk Lokal</a></li>
+                <li class="nav-item"><a class="nav-link" href="activities.html"><i class="fas fa-images me-1"></i>Galeri</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fas fa-envelope me-1"></i>Kontak</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main>
+<section class="bg-success text-white py-5">
+    <div class="container">
+        <div class="row text-center"><div class="col-12"><h1 class="display-4 fw-bold mb-3">Produk Lokal RT 41</h1><p class="lead mb-0">Hasil karya warga RT 41 Kilo 21 yang siap dipasarkan</p></div></div>
+    </div>
+</section>
+
+<section class="py-4 bg-light">
+    <div class="container">
+        <div class="row g-3">
+            <div class="col-md-6">
+                <div class="input-group"><span class="input-group-text bg-success text-white"><i class="fas fa-search"></i></span><input type="text" class="form-control" id="searchInput" placeholder="Cari produk..."></div>
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex gap-2 flex-wrap">
+                    <button class="btn btn-outline-success active" data-category="all">Semua</button>
+                    <button class="btn btn-outline-success" data-category="Makanan">Makanan</button>
+                    <button class="btn btn-outline-success" data-category="Minuman">Minuman</button>
+                    <button class="btn btn-outline-success" data-category="Kerajinan">Kerajinan</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="row g-4" id="products-container">
+            <div class="col-md-6 col-lg-4 product-item" data-category="Makanan" data-name="nugget ayam rumahan">
+                <div class="card border-0 shadow-sm h-100 product-card">
+                    <div class="card-img-top bg-light d-flex align-items-center justify-content-center" style="height:250px;"><i class="fas fa-image text-muted fs-1"></i></div>
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-2"><span class="badge bg-success">Makanan</span></div>
+                        <h5 class="card-title fw-bold">Nugget Ayam Rumahan</h5>
+                        <p class="card-text text-muted flex-grow-1">Nugget ayam buatan warga dengan bahan segar.</p>
+                        <div class="mt-auto">
+                            <div class="d-flex justify-content-between align-items-center mb-3"><span class="fw-bold text-success fs-5">Rp 25.000</span><small class="text-muted">Penjual: Ibu Sari</small></div>
+                            <div class="d-grid gap-2">
+                                <a href="https://wa.me/6281234567890?text=Halo, saya tertarik dengan Nugget Ayam Rumahan" class="btn btn-success" target="_blank"><i class="fab fa-whatsapp me-2"></i>Pesan via WhatsApp</a>
+                                <button class="btn btn-outline-success btn-sm" data-name="Nugget Ayam Rumahan" data-description="Nugget ayam buatan warga dengan bahan segar." data-seller="Ibu Sari" data-phone="6281234567890" data-price="25.000" onclick="showProductDetail(this)"><i class="fas fa-info-circle me-2"></i>Detail Produk</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 product-item" data-category="Minuman" data-name="es sari buah">
+                <div class="card border-0 shadow-sm h-100 product-card">
+                    <div class="card-img-top bg-light d-flex align-items-center justify-content-center" style="height:250px;"><i class="fas fa-image text-muted fs-1"></i></div>
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-2"><span class="badge bg-success">Minuman</span></div>
+                        <h5 class="card-title fw-bold">Es Sari Buah</h5>
+                        <p class="card-text text-muted flex-grow-1">Minuman segar dari buah pilihan.</p>
+                        <div class="mt-auto">
+                            <div class="d-flex justify-content-between align-items-center mb-3"><span class="fw-bold text-success fs-5">Rp 10.000</span><small class="text-muted">Penjual: Pak Budi</small></div>
+                            <div class="d-grid gap-2">
+                                <a href="https://wa.me/6281567890123?text=Halo, saya tertarik dengan Es Sari Buah" class="btn btn-success" target="_blank"><i class="fab fa-whatsapp me-2"></i>Pesan via WhatsApp</a>
+                                <button class="btn btn-outline-success btn-sm" data-name="Es Sari Buah" data-description="Minuman segar dari buah pilihan." data-seller="Pak Budi" data-phone="6281567890123" data-price="10.000" onclick="showProductDetail(this)"><i class="fas fa-info-circle me-2"></i>Detail Produk</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 product-item" data-category="Kerajinan" data-name="tas anyaman">
+                <div class="card border-0 shadow-sm h-100 product-card">
+                    <div class="card-img-top bg-light d-flex align-items-center justify-content-center" style="height:250px;"><i class="fas fa-image text-muted fs-1"></i></div>
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-2"><span class="badge bg-success">Kerajinan</span></div>
+                        <h5 class="card-title fw-bold">Tas Anyaman</h5>
+                        <p class="card-text text-muted flex-grow-1">Tas anyaman tangan karya warga RT 41.</p>
+                        <div class="mt-auto">
+                            <div class="d-flex justify-content-between align-items-center mb-3"><span class="fw-bold text-success fs-5">Rp 75.000</span><small class="text-muted">Penjual: Bu Ani</small></div>
+                            <div class="d-grid gap-2">
+                                <a href="https://wa.me/6281345678901?text=Halo, saya tertarik dengan Tas Anyaman" class="btn btn-success" target="_blank"><i class="fab fa-whatsapp me-2"></i>Pesan via WhatsApp</a>
+                                <button class="btn btn-outline-success btn-sm" data-name="Tas Anyaman" data-description="Tas anyaman tangan karya warga RT 41." data-seller="Bu Ani" data-phone="6281345678901" data-price="75.000" onclick="showProductDetail(this)"><i class="fas fa-info-circle me-2"></i>Detail Produk</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Product Detail Modal -->
+<div class="modal fade" id="productDetailModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-success text-white"><h5 class="modal-title"><i class="fas fa-box me-2"></i>Detail Produk</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4 id="modalProductName" class="fw-bold text-success mb-3"></h4>
+                        <p id="modalProductDescription" class="text-muted"></p>
+                        <div class="mb-3"><strong>Penjual:</strong> <span id="modalProductSeller"></span></div>
+                        <div class="mb-3"><strong>Harga:</strong> <span id="modalProductPrice" class="text-success fw-bold"></span></div>
+                    </div>
+                    <div class="col-md-6"><div class="bg-light rounded p-4"><h6 class="fw-bold mb-3">Cara Pemesanan:</h6><ol class="text-muted"><li>Klik tombol "Pesan via WhatsApp" di bawah</li><li>Kirim pesan dengan format yang sudah disiapkan</li><li>Lengkapi informasi alamat pengiriman</li><li>Konfirmasi pesanan dengan penjual</li><li>Lakukan pembayaran sesuai kesepakatan</li></ol><div class="alert alert-info"><i class="fas fa-info-circle me-2"></i><strong>Info:</strong> Produk dikirim langsung dari RT 41 Kilo 21. Pengiriman tersedia untuk area sekitar.</div></div></div>
+                </div>
+            </div>
+            <div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button><a href="#" id="modalWhatsAppLink" class="btn btn-success" target="_blank"><i class="fab fa-whatsapp me-2"></i>Pesan via WhatsApp</a></div>
+        </div>
+    </div>
+</div>
+</main>
+
+<footer class="bg-dark text-light py-5 mt-5"><div class="container"><div class="row"><div class="col-md-4 mb-4"><h5 class="text-success mb-3"><i class="fas fa-home me-2"></i>RT 41 Kilo 21</h5><p class="mb-2 text-light"><i class="fas fa-map-marker-alt me-2 text-success"></i>Jl. Soekarno Hatta No.km 21, Karang Joang, Kec. Balikpapan Utara, Kota Balikpapan, Kalimantan Timur</p><p class="mb-2 text-light"><i class="fas fa-phone me-2 text-success"></i>+62 812-3456-7890</p><p class="mb-0 text-light"><i class="fas fa-envelope me-2 text-success"></i>rt41.kilo21@gmail.com</p></div><div class="col-md-4 mb-4"><h5 class="text-success mb-3">Tautan Cepat</h5><ul class="list-unstyled"><li class="mb-2"><a href="profile.html" class="text-light text-decoration-none"><i class="fas fa-chevron-right me-2 text-success"></i>Profil RT</a></li><li class="mb-2"><a href="resources.html" class="text-light text-decoration-none"><i class="fas fa-chevron-right me-2 text-success"></i>Potensi Sumber Daya</a></li><li class="mb-2"><a href="products.html" class="text-light text-decoration-none"><i class="fas fa-chevron-right me-2 text-success"></i>Produk Lokal</a></li><li class="mb-2"><a href="activities.html" class="text-light text-decoration-none"><i class="fas fa-chevron-right me-2 text-success"></i>Galeri Kegiatan</a></li></ul></div><div class="col-md-4 mb-4"><h5 class="text-success mb-3">Media Sosial</h5><div class="d-flex gap-3 mb-3"><a href="#" class="text-light fs-4" title="Facebook"><i class="fab fa-facebook"></i></a><a href="#" class="text-light fs-4" title="WhatsApp Group"><i class="fab fa-whatsapp"></i></a><a href="#" class="text-light fs-4" title="Instagram"><i class="fab fa-instagram"></i></a><a href="#" class="text-light fs-4" title="YouTube"><i class="fab fa-youtube"></i></a></div><p class="text-light small mb-2">Ikuti kami di media sosial untuk mendapatkan informasi terbaru tentang kegiatan RT 41 Kilo 21.</p></div></div><hr class="my-4"><div class="row align-items-center"><div class="col-md-6"><p class="mb-0 text-light">&copy; 2025 RT 41 Kilo 21. Semua hak dilindungi.</p></div><div class="col-md-6 text-md-end"><p class="mb-0 text-light">Dibuat dengan <i class="fas fa-heart text-danger"></i> untuk masyarakat RT 41</p></div></div></div></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// Search & category filter
+const searchInput = document.getElementById('searchInput');
+const categoryButtons = document.querySelectorAll('[data-category]');
+const productItems = document.querySelectorAll('.product-item');
+
+if (searchInput) {
+  searchInput.addEventListener('input', function() {
+    const term = this.value.toLowerCase();
+    productItems.forEach(item => {
+      const name = item.getAttribute('data-name') || '';
+      item.style.display = name.includes(term) ? 'block' : 'none';
+    });
+  });
+}
+
+categoryButtons.forEach(btn => {
+  btn.addEventListener('click', function() {
+    const category = this.getAttribute('data-category');
+    categoryButtons.forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+    productItems.forEach(item => {
+      const match = category === 'all' || item.getAttribute('data-category') === category;
+      item.style.display = match ? 'block' : 'none';
+    });
+  });
+});
+
+// Modal detail
+function showProductDetail(button) {
+  const name = button.getAttribute('data-name');
+  const description = button.getAttribute('data-description');
+  const seller = button.getAttribute('data-seller');
+  const phone = button.getAttribute('data-phone');
+  const price = button.getAttribute('data-price');
+  document.getElementById('modalProductName').textContent = name;
+  document.getElementById('modalProductDescription').textContent = description;
+  document.getElementById('modalProductSeller').textContent = seller;
+  document.getElementById('modalProductPrice').textContent = 'Rp ' + price;
+  const whatsappLink = `https://wa.me/${phone}?text=Halo, saya tertarik dengan ${name}. Harga: Rp ${price}. Bisa dikirim ke alamat saya?`;
+  document.getElementById('modalWhatsAppLink').setAttribute('href', whatsappLink);
+  const modal = new bootstrap.Modal(document.getElementById('productDetailModal'));
+  modal.show();
+}
+</script>
+</body>
+</html>
