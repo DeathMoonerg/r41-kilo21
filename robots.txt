@@ -1,0 +1,8 @@
+# robots.txt for RT 41 Kilo 21 Website
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://cwkla.rt41-kilo21-balikpapanutara.kesug.com/sitemap.xml
+
