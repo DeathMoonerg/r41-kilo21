@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    
+    <!-- Halaman Beranda -->
+    <url>
+        <loc>https://deathmoonerg.github.io/r41-kilo21/index.html</loc>
+        <lastmod>2025-01-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- Halaman Profil RT -->
+    <url>
+        <loc>https://deathmoonerg.github.io/r41-kilo21/profile.html</loc>
+        <lastmod>2025-01-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Halaman Potensi -->
+    <url>
+        <loc>https://deathmoonerg.github.io/r41-kilo21/resources.html</loc>
+        <lastmod>2025-01-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Halaman Produk Lokal -->
+    <url>
+        <loc>https://deathmoonerg.github.io/r41-kilo21/products.html</loc>
+        <lastmod>2025-01-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Halaman Galeri Kegiatan -->
+    <url>
+        <loc>https://deathmoonerg.github.io/r41-kilo21/activities.html</loc>
+        <lastmod>2025-01-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Halaman Kontak -->
+    <url>
+        <loc>https://deathmoonerg.github.io/r41-kilo21/contact.html</loc>
+        <lastmod>2025-01-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+</urlset>
+
