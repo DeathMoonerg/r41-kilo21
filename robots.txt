@@ -6,3 +6,4 @@ Allow: /
 # Sitemap location
 Sitemap: https://cwkla.rt41-kilo21-balikpapanutara.kesug.com/sitemap.xml
 
+
