@@ -22,6 +22,15 @@
     <meta property="twitter:title" content="Galeri Kegiatan - RT 41 Kilo 21">
     <meta property="twitter:description" content="Dokumentasi kegiatan rutin, kerja bakti, dan acara warga RT 41 Kilo 21">
     <meta property="twitter:image" content="https://cwkla.rt41-kilo21-balikpapanutara.kesug.com/image/543628436_17844949881568486_3685383190443758722_n-removebg-preview.png">
+    <style>
+        /* Footer look & feel seperti index.html */
+        footer .text-light { color: #ffffff !important; text-shadow: 0 1px 2px rgba(0,0,0,0.3); }
+        footer p { color: #f8f9fa !important; font-weight: 500; }
+        footer .text-muted { color: #e9ecef !important; }
+        footer a.text-light:hover { color: #ffffff !important; text-shadow: 0 0 8px rgba(255,255,255,0.5); }
+        footer .text-success { color: #28a745 !important; text-shadow: 0 1px 2px rgba(0,0,0,0.3); }
+        footer hr { border-color: #495057; }
+    </style>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
@@ -75,38 +84,56 @@
 <section class="py-5">
     <div class="container">
       <div class="row g-4" id="activities-container">
-        <div class="col-md-6 col-lg-4 activity-item" data-category="Sosial" data-title="kerja bakti rw">
+        <div class="col-md-6 col-lg-4 activity-item" data-category="Lingkungan" data-title="Perawatan Tanaman Cabe Rawit">
           <div class="card border-0 shadow-sm h-100 activity-card">
-            <div class="card-img-top bg-light d-flex align-items-center justify-content-center" style="height: 250px;">
-              <i class="fas fa-image text-muted fs-1"></i>
-            </div>
-            <div class="card-body d-flex flex-column">
-              <div class="mb-2">
-                <span class="badge bg-success">Sosial</span>
-                <small class="text-muted ms-2"><i class="fas fa-calendar me-1"></i>10 Okt 2025</small>
-              </div>
-              <h5 class="card-title fw-bold">Kerja Bakti RW</h5>
-              <p class="card-text text-muted flex-grow-1">Membersihkan lingkungan bersama warga.</p>
-              <div class="mt-auto">
-                <button class="btn btn-outline-success btn-sm w-100" data-title="Kerja Bakti RW" data-description="Membersihkan lingkungan bersama warga." data-category="Sosial" data-date="10 Okt 2025" onclick="showActivityDetail(this)"><i class="fas fa-eye me-2"></i>Lihat Detail</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 activity-item" data-category="Lingkungan" data-title="penanaman pohon">
-          <div class="card border-0 shadow-sm h-100 activity-card">
-            <div class="card-img-top bg-light d-flex align-items-center justify-content-center" style="height: 250px;">
-              <i class="fas fa-image text-muted fs-1"></i>
+            <div class="card-img-top" style="height: 250px; overflow:hidden;">
+              <img src="image/aktivitas/7 september 2025.jpg" alt="Perawatan Tanaman Cabe Rawit" class="w-100 h-100 object-fit-cover">
             </div>
             <div class="card-body d-flex flex-column">
               <div class="mb-2">
                 <span class="badge bg-success">Lingkungan</span>
-                <small class="text-muted ms-2"><i class="fas fa-calendar me-1"></i>05 Okt 2025</small>
+                <small class="text-muted ms-2"><i class="fas fa-calendar me-1"></i>07 Sep 2025</small>
               </div>
-              <h5 class="card-title fw-bold">Penanaman Pohon</h5>
-              <p class="card-text text-muted flex-grow-1">Menanam pohon di sekitar RT 41.</p>
+              <h5 class="card-title fw-bold">Perawatan Tanaman Cabe Rawit</h5>
+              <p class="card-text text-muted flex-grow-1">Warga melakukan perawatan dan pengecekan pertumbuhan cabe rawit.</p>
               <div class="mt-auto">
-                <button class="btn btn-outline-success btn-sm w-100" data-title="Penanaman Pohon" data-description="Menanam pohon di sekitar RT 41." data-category="Lingkungan" data-date="05 Okt 2025" onclick="showActivityDetail(this)"><i class="fas fa-eye me-2"></i>Lihat Detail</button>
+                <button class="btn btn-outline-success btn-sm w-100" data-title="Perawatan Tanaman Cabe Rawit" data-description="Warga melakukan perawatan dan pengecekan pertumbuhan cabe rawit." data-category="Lingkungan" data-date="07 Sep 2025" onclick="showActivityDetail(this)"><i class="fas fa-eye me-2"></i>Lihat Detail</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 activity-item" data-category="Lingkungan" data-title="Diskusi Antar Warga RT 41">
+          <div class="card border-0 shadow-sm h-100 activity-card">
+            <div class="card-img-top" style="height: 250px; overflow:hidden;">
+              <img src="image/aktivitas/13 september 2025.jpg" alt="Diskusi Antar Warg" class="w-100 h-100 object-fit-cover">
+            </div>
+            <div class="card-body d-flex flex-column">
+              <div class="mb-2">
+                <span class="badge bg-success">Lingkungan</span>
+                <small class="text-muted ms-2"><i class="fas fa-calendar me-1"></i>13 Sep 2025</small>
+              </div>
+              <h5 class="card-title fw-bold">Diskusi Antar Warga</h5>
+              <p class="card-text text-muted flex-grow-1">Beberapa warga berkumpul di sore hari untuk berbincang ringan sambil menikmati teh serta menciptakan suasana akrab dan penuh kebersamaan.</p>
+              <div class="mt-auto">
+                <button class="btn btn-outline-success btn-sm w-100" data-title="Diskusi Antar Warga" data-description="Diskusi antar warga." data-category="Lingkungan" data-date="13 Sep 2025" onclick="showActivityDetail(this)"><i class="fas fa-eye me-2"></i>Lihat Detail</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 activity-item" data-category="Lingkungan" data-title="Pengecekan dan Panen Jagung Ketan">
+          <div class="card border-0 shadow-sm h-100 activity-card">
+            <div class="card-img-top" style="height: 250px; overflow:hidden;">
+              <img src="image/aktivitas/27 september 2025.jpg" alt="Pengecekan dan Panen Jagung Ketan" class="w-100 h-100 object-fit-cover">
+            </div>
+            <div class="card-body d-flex flex-column">
+              <div class="mb-2">
+                <span class="badge bg-success">Lingkungan</span>
+                <small class="text-muted ms-2"><i class="fas fa-calendar me-1"></i>27 Sep 2025</small>
+              </div>
+              <h5 class="card-title fw-bold">Pengecekan dan Panen Jagung Ketan</h5>
+              <p class="card-text text-muted flex-grow-1">Warga memeriksa kematangan dan memanen jagung ketan.</p>
+              <div class="mt-auto">
+                <button class="btn btn-outline-success btn-sm w-100" data-title="Pengecekan dan Panen Jagung Ketan" data-description="Warga memeriksa kematangan dan memanen jagung ketan." data-category="Lingkungan" data-date="27 Sep 2025" onclick="showActivityDetail(this)"><i class="fas fa-eye me-2"></i>Lihat Detail</button>
               </div>
             </div>
           </div>
@@ -148,7 +175,7 @@
 </div>
 </main>
 
-<footer class="bg-dark text-light py-5 mt-5"><div class="container"><div class="row"><div class="col-md-4 mb-4"><h5 class="text-success mb-3"><i class="fas fa-home me-2"></i>RT 41 Kilo 21</h5><p class="mb-2 text-light"><i class="fas fa-map-marker-alt me-2 text-success"></i>Jl. Soekarno Hatta No.km 21, Karang Joang, Kec. Balikpapan Utara, Kota Balikpapan, Kalimantan Timur</p><p class="mb-2 text-light"><i class="fas fa-phone me-2 text-success"></i>+62 812-3456-7890</p><p class="mb-0 text-light"><i class="fas fa-envelope me-2 text-success"></i>rt41.kilo21@gmail.com</p></div><div class="col-md-4 mb-4"><h5 class="text-success mb-3">Tautan Cepat</h5><ul class="list-unstyled"><li class="mb-2"><a href="profile.html" class="text-light text-decoration-none"><i class="fas fa-chevron-right me-2 text-success"></i>Profil RT</a></li><li class="mb-2"><a href="resources.html" class="text-light text-decoration-none"><i class="fas fa-chevron-right me-2 text-success"></i>Potensi Sumber Daya</a></li><li class="mb-2"><a href="products.html" class="text-light text-decoration-none"><i class="fas fa-chevron-right me-2 text-success"></i>Produk Lokal</a></li><li class="mb-2"><a href="activities.html" class="text-light text-decoration-none"><i class="fas fa-chevron-right me-2 text-success"></i>Galeri Kegiatan</a></li></ul></div><div class="col-md-4 mb-4"><h5 class="text-success mb-3">Media Sosial</h5><div class="d-flex gap-3 mb-3"><a href="#" class="text-light fs-4" title="Facebook"><i class="fab fa-facebook"></i></a><a href="#" class="text-light fs-4" title="WhatsApp Group"><i class="fab fa-whatsapp"></i></a><a href="#" class="text-light fs-4" title="Instagram"><i class="fab fa-instagram"></i></a><a href="#" class="text-light fs-4" title="YouTube"><i class="fab fa-youtube"></i></a></div><p class="text-light small mb-2">Ikuti kami di media sosial untuk mendapatkan informasi terbaru tentang kegiatan RT 41 Kilo 21.</p></div></div><hr class="my-4"><div class="row align-items-center"><div class="col-md-6"><p class="mb-0 text-light">&copy; 2025 RT 41 Kilo 21. Semua hak dilindungi.</p></div><div class="col-md-6 text-md-end"><p class="mb-0 text-light">Dibuat dengan <i class="fas fa-heart text-danger"></i> untuk masyarakat RT 41</p></div></div></div></footer>
+<footer class="bg-dark text-light py-5 mt-5"><div class="container"><div class="row"><div class="col-md-4 mb-4"><h5 class="text-success mb-3"><i class="fas fa-home me-2"></i>RT 41 Kilo 21</h5><p class="mb-2 text-light"><i class="fas fa-map-marker-alt me-2 text-success"></i>Jl. Soekarno Hatta No.km 21, Karang Joang, Kec. Balikpapan Utara, Kota Balikpapan, Kalimantan Timur</p><p class="mb-2 text-light"><i class="fas fa-phone me-2 text-success"></i>+62 85760434927</p><p class="mb-0 text-light"><i class="fas fa-envelope me-2 text-success"></i>02231009@student.itk.ac.id</p></div><div class="col-md-4 mb-4"><h5 class="text-success mb-3">Tautan Cepat</h5><ul class="list-unstyled"><li class="mb-2"><a href="profile.html" class="text-light text-decoration-none"><i class="fas fa-chevron-right me-2 text-success"></i>Profil RT</a></li><li class="mb-2"><a href="resources.html" class="text-light text-decoration-none"><i class="fas fa-chevron-right me-2 text-success"></i>Potensi Sumber Daya</a></li><li class="mb-2"><a href="products.html" class="text-light text-decoration-none"><i class="fas fa-chevron-right me-2 text-success"></i>Produk Lokal</a></li><li class="mb-2"><a href="activities.html" class="text-light text-decoration-none"><i class="fas fa-chevron-right me-2 text-success"></i>Galeri Kegiatan</a></li></ul></div><div class="col-md-4 mb-4"><h5 class="text-success mb-3">Media Sosial</h5><div class="d-flex gap-3 mb-3"><a href="https://www.instagram.com/insos_cakrawala/" class="text-light fs-4" title="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a></div><p class="text-light small mb-2">Ikuti kami di Instagram untuk mendapatkan informasi terbaru tentang kegiatan RT 41 Kilo 21.</p></div></div><hr class="my-4"><div class="row align-items-center"><div class="col-md-6"><p class="mb-0 text-light">&copy; 2025 RT 41 Kilo 21. Semua hak dilindungi.</p></div><div class="col-md-6 text-md-end"><p class="mb-0 text-light">Dibuat dengan <i class="fas fa-heart text-danger"></i> untuk masyarakat RT 41</p></div></div></div></footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script>
